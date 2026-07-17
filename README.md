@@ -1,24 +1,57 @@
-# 🔐 Web Security Notes
+# 🛡️ Web Security Notes
 
-Kumpulan catatan, konsep, dan lab write-up tentang keamanan aplikasi web — mencakup server-side, client-side, dan advanced topics (mengikuti struktur ala PortSwigger Web Security Academy).
+> Personal learning notes while studying Web Security through PortSwigger Web Security Academy, OWASP, books, and hands-on labs.
 
-## 📂 Struktur Repository
+---
 
-- **server-side/** — SQL Injection, Auth, Path Traversal, SSRF, XXE, dll.
-- **client-side/** — XSS, CSRF, CORS, Clickjacking, DOM-based, WebSockets.
-- **advanced/** — Deserialization, GraphQL, SSTI, JWT, OAuth, Request Smuggling, dll.
-- **cheatsheets/** — Referensi cepat (Burp Suite, HTTP, Linux, Encoding).
-- **resources/** — Buku, lab, blog, dan video rekomendasi.
-- **assets/** — Gambar, diagram, dan screenshot pendukung.
+## Learning Progress
 
-## 🎯 Tujuan
+### Server-side
 
-Repository ini dibuat untuk dokumentasi belajar pribadi seputar web application security testing.
+| Topic | Status |
+|--------|--------|
+| SQL Injection | 🚧 |
+| Authentication | ⬜ |
+| Path Traversal | ⬜ |
+| Command Injection | ⬜ |
+| Business Logic | ⬜ |
+| Information Disclosure | ⬜ |
+| Access Control | ⬜ |
+| File Upload | ⬜ |
+| Race Conditions | ⬜ |
+| SSRF | 🚧 |
+| XXE | ⬜ |
+| NoSQL Injection | ⬜ |
+| API Testing | ⬜ |
+| Web Cache Deception | ⬜ |
 
-## ⚠️ Disclaimer
+---
 
-Semua materi di sini untuk tujuan edukasi. Jangan gunakan teknik apa pun di sini pada sistem yang tidak memiliki izin eksplisit.
+### Client-side
 
-## 📜 License
+| Topic | Status |
+|--------|--------|
+| XSS | ⬜ |
+| CSRF | ⬜ |
+| CORS | ⬜ |
+| Clickjacking | ⬜ |
+| DOM-based Vulnerabilities | ⬜ |
+| WebSockets | ⬜ |
 
-Lihat [LICENSE](LICENSE).
+---
+
+### Advanced
+
+| Topic | Status |
+|--------|--------|
+| Insecure Deserialization | ⬜ |
+| Web LLM Attacks | ⬜ |
+| GraphQL | ⬜ |
+| SSTI | ⬜ |
+| Web Cache Poisoning | ⬜ |
+| HTTP Host Header | ⬜ |
+| HTTP Request Smuggling | ⬜ |
+| OAuth | ⬜ |
+| JWT | ⬜ |
+| Prototype Pollution | ⬜ |
+| Essential Skills | ⬜ |
