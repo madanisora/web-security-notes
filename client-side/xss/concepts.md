@@ -56,5 +56,4 @@ Setiap pengguna yang membuka halaman komentar tersebut akan otomatis menjalankan
 
 **Pencegahan singkat:** validasi/filter input saat diterima, lakukan output encoding sesuai konteks (HTML, JS, URL, CSS), gunakan header respons yang tepat (`Content-Type`, `X-Content-Type-Options`), dan terapkan Content Security Policy (CSP) sebagai lapisan pertahanan tambahan.
 
----
-*Referensi: PortSwigger Web Security Academy — Cross-site scripting*
+
