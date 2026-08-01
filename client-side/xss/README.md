@@ -3,6 +3,38 @@
 ## 📖 Overview
 Cross-Site Scripting (XSS) adalah salah satu kerentanan web paling umum, di mana penyerang menyisipkan script berbahaya (biasanya JavaScript) ke dalam halaman yang dilihat pengguna lain, sehingga bisa membajak sesi, mencuri data, atau menjalankan aksi atas nama korban. Folder ini berisi catatan belajar dan hasil eksplorasi seputar tiga jenis utama XSS (reflected, stored, DOM-based), konteks-konteks injeksi, teknik eksploitasi, hingga strategi mitigasinya — disusun berdasarkan materi PortSwigger Web Security Academy.
 
+## 🖼️ Gambaran Visual
+
+**Alur serangan XSS secara umum:**
+
+```mermaid
+flowchart LR
+    A[Penyerang menyisipkan payload] --> B{Jenis XSS}
+    B -->|Reflected| C[Payload di parameter URL]
+    B -->|Stored| D[Payload disimpan di database]
+    B -->|DOM-based| E[Payload diproses oleh JS client-side]
+    C --> F[Server memantulkan payload ke response]
+    D --> G[Server menyajikan payload ke pengguna lain]
+    E --> H[DOM ditulis ulang tanpa sanitasi]
+    F --> I[Browser korban mengeksekusi script]
+    G --> I
+    H --> I
+    I --> J[Sesi/cookie dicuri, aksi dilakukan atas nama korban]
+```
+
+**Tiga jenis XSS berdasarkan sumber payload:**
+
+```mermaid
+graph TD
+    XSS[Cross-Site Scripting] --> R[Reflected XSS]
+    XSS --> S[Stored XSS]
+    XSS --> D[DOM-based XSS]
+
+    R --> R1["Sumber: HTTP request saat itu juga"]
+    S --> S1["Sumber: database / penyimpanan aplikasi"]
+    D --> D1["Sumber: kode JavaScript sisi client"]
+```
+
 ## 📚 Konsep Utama
 Lihat [concepts.md](concepts.md) untuk penjelasan lebih detail. Topik yang dicakup meliputi:
 
